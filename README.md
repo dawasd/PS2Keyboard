@@ -12,10 +12,12 @@ build_flags =
 	-D ESP8266
 	-D NODEMCUV2
 ```
-  
-NODEMCUV2 is required to set ps2interrupt function to use ICACHE_RAM_ATTR.
 
-Without ICACHE_RAM_ATTR, may get errors like:
+ESP8266 build flag is required to set interrupt pin correctly for ESP8266
+
+NODEMCUV2 build flag is required to set ps2interrupt function to use IRAM_ATTR (previously ICACHE_RAM_ATTR).
+
+Without IRAM_ATTR, may get errors like:
 
 ```
 ISR not in IRAM!
