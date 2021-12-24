@@ -1,4 +1,4 @@
-# Custom fork notest:
+# Custom fork notes:
 
 ## NodeMCU V2
 
