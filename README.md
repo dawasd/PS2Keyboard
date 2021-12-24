@@ -1,6 +1,6 @@
 # Custom fork notest:
 
-## NoceMCU V2
+## NodeMCU V2
 
 Example platformio.ini env:
 
