@@ -4,13 +4,14 @@
 
 Example platformio.ini env:
 
+```
 [env:nodemcuv2]
 platform = espressif8266
 board = nodemcuv2
 build_flags =
 	-D ESP8266
 	-D NODEMCUV2
-  
+```
   
 NODEMCUV2 is required to set ps2interrupt function to use ICACHE_RAM_ATTR.
 
