@@ -59,7 +59,12 @@ static uint8_t UTF8next=0;
 static const PS2Keymap_t *keymap=NULL;
 
 // The ISR for the external interrupt
-void ps2interrupt(void)
+// Add NODEMCUV2 to build defs
+#ifdef NODEMCUV2
+	ICACHE_RAM_ATTR void ps2interrupt(void)
+#else
+	void ps2interrupt(void)
+#endif
 {
 	static uint8_t bitcount=0;
 	static uint8_t incoming=0;
